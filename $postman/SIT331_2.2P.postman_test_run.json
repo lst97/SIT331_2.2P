@@ -1,0 +1,264 @@
+{
+	"id": "2f51e72f-7815-44ec-a62b-db62d10dcc2a",
+	"name": "SIT331_2.2P",
+	"timestamp": "2023-03-30T01:30:38.410Z",
+	"collection_id": "26388847-1772f38e-66a8-41b4-9524-8629d0668a04",
+	"folder_id": 0,
+	"environment_id": "26388847-b8468546-b715-4055-bc84-9c9dd6c57e6c",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-30T01:30:37.908Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "77de60cf-3233-4a60-a615-c824024de149",
+			"name": "GET /robot-comman",
+			"url": "localhost:5002/api/robot-commands",
+			"time": 105,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				105
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d897c380-ca12-4d80-8dbf-70d764ccf56e",
+			"name": "GET / robot-commands/mov",
+			"url": "localhost:5002/api/robot-commands/move",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f8908493-a60d-43f0-b7d2-47e28e1a6744",
+			"name": "GET /robot-commands/{id}",
+			"url": "localhost:5002/api/robot-commands/1",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				19
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d14a36ed-3c9e-4cf7-9c59-e67811896bdf",
+			"name": "POST /robot-command",
+			"url": "localhost:5002/api/robot-commands",
+			"time": 21,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e0537738-572a-41f1-8d33-a2b0a32a17ea",
+			"name": "PUT /robot-commands/{id}",
+			"url": "localhost:5002/api/robot-commands/1",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "98c77dec-1fd7-49cb-bded-470695f0bd3e",
+			"name": "DEL /robot-commands/{id}",
+			"url": "localhost:5002/api/robot-commands/1",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d67b69c3-e72b-4899-b35d-05a97012e688",
+			"name": "DEL /maps/{id}",
+			"url": "localhost:5002/api/maps/0",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f86c1722-620a-4d45-884a-bca7418d8da8",
+			"name": "GET /maps",
+			"url": "localhost:5002/api/maps",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f854ce90-d152-4502-a629-927ce38f3652",
+			"name": "GET /maps/{coordinate}",
+			"url": "localhost:5002/api/maps/1/1-1",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7be13dc0-abc8-4ea3-aa19-4fc7e5b73400",
+			"name": "PUT /maps/{id}",
+			"url": "localhost:5002/api/maps/0",
+			"time": 27,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				27
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5d591128-23fb-440b-8e36-b9933c5415da",
+			"name": "PUT /maps",
+			"url": "localhost:5002/api/maps",
+			"time": 5,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 206,
+	"collection": {
+		"requests": [
+			{
+				"id": "77de60cf-3233-4a60-a615-c824024de149",
+				"method": "GET"
+			},
+			{
+				"id": "d897c380-ca12-4d80-8dbf-70d764ccf56e",
+				"method": "GET"
+			},
+			{
+				"id": "f8908493-a60d-43f0-b7d2-47e28e1a6744",
+				"method": "GET"
+			},
+			{
+				"id": "d14a36ed-3c9e-4cf7-9c59-e67811896bdf",
+				"method": "POST"
+			},
+			{
+				"id": "e0537738-572a-41f1-8d33-a2b0a32a17ea",
+				"method": "PUT"
+			},
+			{
+				"id": "98c77dec-1fd7-49cb-bded-470695f0bd3e",
+				"method": "DELETE"
+			},
+			{
+				"id": "d67b69c3-e72b-4899-b35d-05a97012e688",
+				"method": "DELETE"
+			},
+			{
+				"id": "f86c1722-620a-4d45-884a-bca7418d8da8",
+				"method": "GET"
+			},
+			{
+				"id": "f854ce90-d152-4502-a629-927ce38f3652",
+				"method": "GET"
+			},
+			{
+				"id": "7be13dc0-abc8-4ea3-aa19-4fc7e5b73400",
+				"method": "PUT"
+			},
+			{
+				"id": "5d591128-23fb-440b-8e36-b9933c5415da",
+				"method": "POST"
+			}
+		]
+	}
+}

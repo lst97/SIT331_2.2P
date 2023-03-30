@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "1772f38e-66a8-41b4-9524-8629d0668a04",
+		"name": "SIT331_2.2P",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26388847"
+	},
+	"item": [
+		{
+			"name": "GET /robot-comman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/robot-commands",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"robot-commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET / robot-commands/mov",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/robot-commands/move",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"robot-commands",
+						"move"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /robot-commands/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/robot-commands/1",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"robot-commands",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /robot-command",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isMoveCommand\": false,\n    \"name\": \"BLINK\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/robot-commands",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"robot-commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /robot-commands/{id}",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"isMoveCommand\": false,\n    \"name\": \"MODIFIED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/robot-commands/1",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"robot-commands",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL /robot-commands/{id}",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/robot-commands/1",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"robot-commands",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL /maps/{id}",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/maps/0",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"maps",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /maps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/maps",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /maps/{coordinate}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/maps/1/1-1",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"maps",
+						"1",
+						"1-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /maps/{id}",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"MODIFIED\",\n    \"size\": {\n        \"X\": 10,\n        \"Y\": 10\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/maps/0",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"maps",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /maps",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"MODIFIED\",\n    \"size\": \"{\\\"x\\\": 10, \\\"y\\\": 10}\",\n    \"description\": \"THIS IS A TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-host}}:{{port}}/{{prefix}}/maps",
+					"host": [
+						"{{api-host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{prefix}}",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
